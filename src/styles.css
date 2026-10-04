@@ -1,0 +1,136 @@
+:root{--bg:#f2f5f8;--card:#fff;--ink:#0e1a2b;--mut:#51607a;--line:#d5dce6;--acc:#0a5c8f;--hi:#f2b01e;--code:#0e1a2b;--codeink:#cfe3f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1320;--card:#121d30;--ink:#e8eef7;--mut:#9aaac2;--line:#24344e;--acc:#6cb8ee;--hi:#f2b01e;--code:#070d17;--codeink:#cfe3f5}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3,.brand{font-family:"Bricolage Grotesque","Hanken Grotesk",sans-serif;line-height:1.1;margin:0}
+a{color:inherit}.wrap{max-width:1040px;margin:0 auto;padding-left:22px;padding-right:22px}
+main>section{padding-top:22px;padding-bottom:22px}
+:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.nav{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.brand{font-weight:800;text-decoration:none;font-size:1.2rem}
+.nav nav{display:flex;gap:18px;align-items:center}.nav nav a{text-decoration:none;color:var(--mut);font-weight:500}
+.nav nav a:hover{color:var(--ink)}.pill{background:var(--ink);color:var(--bg)!important;padding:6px 14px;border-radius:99px}
+.hero{padding-top:30px}
+.who{display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:4px;background:var(--card);margin-bottom:26px}
+.who button{border:0;background:none;color:var(--mut);font:600 .95rem inherit;font-family:inherit;padding:8px 16px;border-radius:99px;cursor:pointer}
+.who .on{background:var(--ink);color:var(--bg)}
+h1{font-size:clamp(2.3rem,6vw,4.4rem);font-weight:800;max-width:16ch;letter-spacing:-.02em}
+.sub{max-width:60ch;color:var(--mut);font-size:1.12rem;margin:22px 0}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--hi);color:#0e1a2b;font:700 1rem "Hanken Grotesk",sans-serif;padding:13px 22px;border-radius:10px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{filter:brightness(.95)}.btn.ghost{background:none;color:var(--ink);border:1.5px solid var(--ink)}
+.resp{margin:38px 0 0;background:var(--code);color:var(--codeink);padding:20px 22px;border-radius:12px;font:.92rem/1.6 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;max-width:560px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;padding-top:0;padding-bottom:0}
+.stats div{padding:18px 18px 18px 0;border-top:2px solid var(--ink)}
+.stats strong{display:block;font:800 1.7rem "Bricolage Grotesque",sans-serif}.stats span{color:var(--mut);font-size:.95rem}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:800;margin-bottom:24px}.gap{margin-top:28px}
+.grid4,.grid3{display:grid;gap:16px}.grid4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.grid3{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+article h3{font-size:1.25rem;margin-bottom:8px}article p{margin:0 0 14px;color:var(--mut);font-size:.98rem}
+.tag{float:right;background:var(--hi);color:#0e1a2b;font-weight:700;font-size:.78rem;padding:2px 10px;border-radius:99px}
+.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:6px}
+.chips li{border:1px solid var(--line);border-radius:6px;padding:2px 9px;font-size:.85rem;color:var(--mut)}
+.link{display:inline-block;margin-top:12px;color:var(--acc);font-weight:600}
+.client{display:grid;grid-template-columns:1fr;gap:18px;border:2px solid var(--ink)}
+.client small{font:500 .9rem "Hanken Grotesk";color:var(--mut);margin-left:8px}
+blockquote{margin:0;padding-left:16px;border-left:4px solid var(--hi);font-size:1.1rem}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:48px}
+.tl{list-style:none;padding:0;margin:0;border-left:2px solid var(--line)}
+.tl li{padding:0 0 22px 20px;position:relative}.tl li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--acc)}
+.tl b{display:block;font-size:1.05rem}.tl em{color:var(--mut);font-style:normal;font-size:.92rem}.tl p{margin:6px 0 0;color:var(--mut);font-size:.96rem}
+.sk{margin-bottom:16px}.sk h3{font-size:1rem;margin-bottom:8px}
+.plain{list-style:none;padding:0;margin:0}.plain li{padding:8px 0;border-bottom:1px solid var(--line);font-size:.97rem}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+form{display:grid;gap:14px}label{display:grid;gap:5px;font-weight:600;font-size:.95rem}
+input,select,textarea{font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.note{color:var(--mut);margin:0}
+.foot{padding-top:30px;padding-bottom:40px;color:var(--mut);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:760px){.two,.contact{grid-template-columns:1fr;gap:32px}.nav nav a:not(.pill){display:none}main>section{padding-top:16px;padding-bottom:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.tag.st{float:none;display:inline-block;margin-bottom:10px}
+.hero,.stats,section{overflow-wrap:anywhere}
+
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
+.photo{width:min(320px,100%);aspect-ratio:1;border-radius:50%;overflow:hidden;position:relative;justify-self:center;border:6px solid var(--card);box-shadow:0 0 0 2px var(--hi)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.photo{order:-1;width:180px;justify-self:start}}
+.copy{min-width:0}
+@media(max-width:860px){.hero{grid-template-columns:minmax(0,1fr)}.resp{max-width:100%}}
+
+/* centered hero */
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0}
+.copy{display:flex;flex-direction:column;align-items:center;width:100%}
+.photo{order:-1;width:190px;margin:0 0 22px;justify-self:auto}
+.who{margin-bottom:22px}
+h1{margin-left:auto;margin-right:auto;max-width:18ch}
+.sub{margin:18px auto 22px}
+.row{justify-content:center}
+.resp{text-align:left;margin:30px auto 0;width:100%}
+.stats{margin-top:8px}
+
+/* laptop + tablet: text left, photo right. Phones keep the centered stack. */
+@media(min-width:700px){
+  .hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);align-items:start;column-gap:40px;text-align:left}
+  .copy{align-items:flex-start}
+  .photo{order:0;width:min(320px,100%);margin:28px 0 0;justify-self:center}
+  h1{margin-left:0;margin-right:0;max-width:16ch}
+  .sub{margin:18px 0 22px}
+  .row{justify-content:flex-start}
+  .resp{margin:28px 0 0;max-width:560px}
+}
+
+/* centered stats + even section gaps */
+.stats div{text-align:center;padding:18px 10px}
+.gap{margin-top:44px}
+
+/* centered footer */
+.foot{text-align:center}
+
+/* hero: right column holds photo + code box on laptop/tablet */
+@media(min-width:700px){
+  .hero{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);grid-template-areas:"copy photo" "copy resp";row-gap:22px;align-items:start}
+  .copy{grid-area:copy}
+  .photo{grid-area:photo;margin:10px 0 0}
+  .resp{grid-area:resp;margin:0;max-width:100%;font-size:clamp(.68rem,1.15vw,.82rem);padding:18px 18px}
+}
+/* equal gap above every heading on phones too */
+@media(max-width:760px){.gap{margin-top:32px}}
+
+/* ONE gap value for laptop, tablet and phone */
+:root{--gap:28px}
+main>section{padding-top:calc(var(--gap)/2);padding-bottom:calc(var(--gap)/2)}
+.gap{margin-top:var(--gap)}
+@media(max-width:760px){main>section{padding-top:calc(var(--gap)/2);padding-bottom:calc(var(--gap)/2)}.gap{margin-top:var(--gap)}}
+
+/* response box + caption */
+.respwrap{margin:28px auto 0;width:100%;max-width:560px;text-align:left}
+.respwrap .resp{margin:0;max-width:100%;width:100%}
+.cap{font-size:.88rem;color:var(--mut);margin:0 0 8px}
+.cap a{color:var(--acc);font-weight:600}
+@media(min-width:700px){.respwrap{grid-area:resp;margin:0}}
+
+/* keep the left text block vertically centred beside the taller right column */
+@media(min-width:700px){.copy{align-self:center}}
+
+/* stack inside the sample box: wraps to the box width, hanging indent */
+.stk{display:block;white-space:normal;padding-left:4ch;line-height:1.6}
+
+/* stack list wraps by itself to the box width */
+.resp .stk{display:block;white-space:normal;padding-left:4ch}
+.resp{white-space:pre}
+@media(min-width:700px){.hero{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}}
+
+/* phones: slightly smaller code text so the box never scrolls sideways */
+@media(max-width:560px){.resp{font-size:.72rem;padding:16px 14px}}
+@media(max-width:360px){.resp{font-size:.64rem;padding:14px 12px}}
+
+/* laptop/tablet: bottom of the buttons lines up with the bottom of the code box */
+@media(min-width:700px){.copy{align-self:end}}
+
+/* laptop/tablet: photo + text start on the same line; photo sized so both columns end together */
+@media(min-width:700px){
+  .copy{align-self:start}
+  .photo{margin:0;width:var(--ph,240px)}
+}
+@media(min-width:700px){.photo{width:clamp(205px,calc(205px + (100vw - 768px)*0.32),244px)}}

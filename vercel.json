@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/developer/santosh-pal", "destination": "/api/profile" }
+  ]
+}
