@@ -58,13 +58,13 @@ export const freelanceWork = {
 };
 
 export const projects = [
-  { n: "Krushivottam", tag: "Winner", d: "Farm management and e-commerce platform for farmers, traders and customers. Won Rs 15 lakh funding from the NETRARIT Foundation and 1st prize in an intercollege competition.", s: ["Java", "Android", "Python", "Flask", "Firebase"], l: "" },
-  { n: "Nisarchana", tag: "Android", d: "Infrastructure project app that predicts project dimensions, shows a 2D model and connects customers with engineers. Razorpay payments included.", s: ["Java", "Android", "ML", "Flask", "Razorpay"], l: "" },
-  { n: "System of Suraksha", tag: "1st prize", d: "Women's safety app that sends an SMS with the live location during an emergency without using internet.", s: ["Java", "Android", "Firebase"], l: "" },
-  { n: "API Simulator", tag: "Backend", d: "Postman-style tool that forwards POST requests to REST and SOAP services and returns the live response.", s: ["Spring Boot", "RestTemplate", "SOAP", "REST"], l: "" },
-  { n: "Expense Tracker", tag: "Full stack", d: "Expense manager with signup, login, sessions and full CRUD.", s: ["Servlet", "Hibernate JPA", "PostgreSQL"], l: "" },
-  { n: "Banking System", tag: "Backend", d: "Account management and transactions on a PostgreSQL backend using JDBC.", s: ["JDBC", "PostgreSQL"], l: "" },
-  { n: "Job Tracker", tag: "Frontend", d: "Track job applications with add, edit, delete, search, filters, local storage and dark mode.", s: ["JavaScript", "HTML", "CSS"], l: "" },
+  { n: "Krushivottam", tag: "Winner", d: "Farm management and e-commerce platform for farmers, traders and customers. Won Rs 15 lakh funding from the NETRARIT Foundation and 1st prize in an intercollege competition.", s: ["Java", "Android", "Python", "Flask", "Firebase"], l: "https://github.com/Palsantosh2210/Krushivottam" },
+  { n: "Nisarchana", tag: "Android", d: "Infrastructure project app that predicts project dimensions, shows a 2D model and connects customers with engineers. Razorpay payments included.", s: ["Java", "Android", "ML", "Flask", "Razorpay"], l: "https://github.com/Palsantosh2210/Nisarchana" },
+  { n: "System of Suraksha", tag: "1st prize", d: "Women's safety app that sends an SMS with the live location during an emergency without using internet.", s: ["Java", "Android", "Firebase"], l: "https://github.com/Palsantosh2210/Simple-SOS-system-of-suraksha-APP" },
+  { n: "API Simulator", tag: "Backend", d: "Postman-style tool that forwards POST requests to REST and SOAP services and returns the live response.", s: ["Spring Boot", "RestTemplate", "SOAP", "REST"], l: "https://github.com/Palsantosh2210/Simulator" },
+  { n: "Expense Tracker", tag: "Full stack", d: "Expense manager with signup, login, sessions and full CRUD.", s: ["Servlet", "Hibernate JPA", "PostgreSQL"], l: "https://github.com/Palsantosh2210/Expense-Tracker-" },
+  { n: "Banking System", tag: "Backend", d: "Account management and transactions on a PostgreSQL backend using JDBC.", s: ["JDBC", "PostgreSQL"], l: "https://github.com/Palsantosh2210/bankingapp" },
+  { n: "Job Tracker", tag: "Frontend", d: "Track job applications with add, edit, delete, search, filters, local storage and dark mode.", s: ["JavaScript", "HTML", "CSS"], l: "https://github.com/Palsantosh2210/jobtracker" },
 ];
 
 export const experience = [
