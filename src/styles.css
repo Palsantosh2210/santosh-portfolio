@@ -134,3 +134,7 @@ main>section{padding-top:calc(var(--gap)/2);padding-bottom:calc(var(--gap)/2)}
   .photo{margin:0;width:var(--ph,240px)}
 }
 @media(min-width:700px){.photo{width:clamp(205px,calc(205px + (100vw - 768px)*0.32),244px)}}
+
+/* contact buttons (address / number stay hidden until tapped) */
+.cta-link{background:none;border:0;padding:0;margin:0;font:inherit;color:var(--ink);cursor:pointer;text-decoration:underline;text-underline-offset:3px;text-align:left}
+.cta-link:hover{color:var(--acc)}

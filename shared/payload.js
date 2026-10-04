@@ -4,7 +4,7 @@ import { apiStack } from "./skills.js";
 export const payload = {
   role: "Java Full Stack Developer",
   based_in: "Mumbai, India",
-  now: "Fintech APIs @ Yalamanchili Payments & Cards",
+  now: "Banking APIs @ Yalamanchili",
   stack: apiStack,
   freelance: "open for projects",
 };

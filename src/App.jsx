@@ -32,6 +32,15 @@ export default function App() {
   const [sent, setSent] = useState(false);
   const [f, setF] = useState({ name: "", need: "", msg: "" });
 
+  // Links are built only on tap, so the address and number are not shown as text on the page.
+  const openEmail = () => {
+    window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent("Enquiry from your portfolio")}`;
+  };
+  const openWhatsApp = () => {
+    const msg = encodeURIComponent("Hi Santosh, I saw your portfolio and would like to talk.");
+    window.open(`https://wa.me/${profile.whatsapp}?text=${msg}`, "_blank", "noopener");
+  };
+
   const send = (e) => {
     e.preventDefault();
     const body = `Hi Santosh,\n\n${f.msg}\n\nProject type: ${f.need}\nFrom: ${f.name}`;
@@ -132,8 +141,8 @@ export default function App() {
             <h2>Tell me about your project</h2>
             <p>I reply within a day. For quick questions, message me on WhatsApp.</p>
             <ul className="plain">
-              <li><a href={`mailto:${profile.email}`}>{profile.email}</a></li>
-              <li><a href={`https://wa.me/${profile.whatsapp}`}>WhatsApp {profile.phone}</a></li>
+              <li><button type="button" className="cta-link" onClick={openEmail}>Email me <span aria-hidden="true">→</span></button></li>
+              <li><button type="button" className="cta-link" onClick={openWhatsApp}>Chat on WhatsApp <span aria-hidden="true">→</span></button></li>
               {ext(profile.linkedin) && <li><a href={profile.linkedin}>LinkedIn</a></li>}
               {ext(profile.github) && <li><a href={profile.github}>GitHub</a></li>}
               {ext(profile.leetcode) && <li><a href={profile.leetcode}>LeetCode</a></li>}
